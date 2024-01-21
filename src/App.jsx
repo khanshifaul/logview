@@ -1,6 +1,6 @@
-import { SlNotebook } from "react-icons/sl";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import Footer from "./components/footer";
+import Logo from "./components/logo";
 import About from "./pages/about";
 import Home from "./pages/home";
 
@@ -8,18 +8,31 @@ export default function App() {
   return (
     <div>
       <BrowserRouter>
-        <div className="container flex justify-between items-center mx-auto my-2">
-          <div className="flex font-bold text-3xl p-2">
-            <SlNotebook />
-            <h1>LogView</h1>
-          </div>
+        <div className="container sticky top-0 flex justify-between items-center mx-auto my-2 bg-white">
+          <a href="/">
+            <Logo />
+          </a>
           <nav>
-            <ul className="flex justify-between">
-              <li className="px-2 mx-2">
-                <Link to="/">Home</Link>
+            <ul className="flex justify-between space-x-2 mx-3">
+              <li>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? "font-semibold" : ""
+                  }
+                >
+                  Home
+                </NavLink>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    isActive ? "font-semibold" : ""
+                  }
+                >
+                  About
+                </NavLink>
               </li>
             </ul>
           </nav>

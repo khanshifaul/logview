@@ -51,7 +51,7 @@ function Home() {
   return (
     <>
       <main className="container mx-auto">
-        <div className="flex justify-end space-x-1 py-2">
+        <div className="flex justify-end space-x-1 m-2">
           <button
             onClick={handleClick}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
@@ -64,30 +64,32 @@ function Home() {
           </button>
         </div>
 
-        <div className="container mx-auto">
-          <table className="table-auto w-full text-center">
+        <div className="md:w-full overflow-x-visible">
+          <table className="table-auto w-full text-center m-2">
             <thead className="bg-gray-200">
-              <tr className="border-b-2">
-                <th className="px-3">Date</th>
-                <th className="px-3">Time</th>
-                <th className="px-3">Device</th>
-                <th className="px-3">User</th>
-                <th className="px-3">SrcIP:Port</th>
-                <th className="px-3">NATIP:Port</th>
-                <th className="px-3">DstIP:Port</th>
+              <tr className="py-2">
+                <th className="px-1">Id</th>
+                <th className="px-1">Date</th>
+                <th className="px-1">Time</th>
+                <th className="px-1">Device</th>
+                <th className="px-1">User</th>
+                <th className="px-1">SrcIP:Port</th>
+                <th className="px-1">NATIP:Port</th>
+                <th className="px-1">DstIP:Port</th>
               </tr>
             </thead>
             <tbody>
               {!loading &&
                 data.map((item, index) => (
-                  <tr key={index} className="border-b-2 my-2">
-                    <td className="px-3">{item.Date}</td>
-                    <td className="px-3">{item.Time}</td>
-                    <td className="px-3">{item.Device}</td>
-                    <td className="px-3">{item.User}</td>
-                    <td className="px-3">{item.SrcIPPort}</td>
-                    <td className="px-3">{item.NATIPPort}</td>
-                    <td className="px-3">{item.DstIPPort}</td>
+                  <tr key={index} className="py-2 hover:bg-gray-100">
+                    <td className="px-1">{index+1}</td>
+                    <td className="px-1">{item.Date}</td>
+                    <td className="px-1">{item.Time}</td>
+                    <td className="px-1">{item.Device}</td>
+                    <td className="px-1">{item.User}</td>
+                    <td className="px-1">{item.SrcIPPort}</td>
+                    <td className="px-1">{item.NATIPPort}</td>
+                    <td className="px-1">{item.DstIPPort}</td>
                   </tr>
                 ))}
             </tbody>

@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="container mx-auto">
-      <div>
+      <div className="p-5">
         <div className="my-3">
           <h3 className="font-semibold">What is LogView?</h3>
           <p>
@@ -14,7 +14,7 @@ export default function About() {
           <ul className="list-disc list-inside">
             <li>
               Data Fetching: It fetches log data from a file called
-              "daily_log.log".
+              &quot;daily_log.log&quot;.
             </li>
             <li>
               Data Parsing: It parses the log entries, extracting relevant
@@ -30,9 +30,18 @@ export default function About() {
               making it easy to read and analyze the log entries.
             </li>
             <li>
-              Refresh Button: It offers a "Refresh" button to manually fetch and
-              display the latest log data.
+              Refresh Button: It offers a &quot;Refresh&quot; button to manually
+              fetch and display the latest log data.
             </li>
+          </ul>
+        </div>
+        <div className="my-3">
+          <h3 className="font-semibold">Upcoming Features</h3>
+          <ul className="list-disc list-inside">
+            <li>Filtering logs based on specific criteria</li>
+            <li>Sorting logs by different fields</li>
+            <li>Highlighting important events or patterns</li>
+            <li>Exporting logs to other formats</li>
           </ul>
         </div>
       </div>
