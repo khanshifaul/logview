@@ -36,27 +36,27 @@ export default function About() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-center items-center w-full min-h-fit fixed top-[50%] left-[25%]">
+      <div className="flex justify-center items-center w-full min-h-fit fixed top-[80%] left-[30%]">
         <img
           className="absolute animate-anticlockwise"
           src="/src/assets/Asset 2.png"
           alt=""
-          height="250"
-          width="250"
+          height="420"
+          width="420"
         />
         <img
           className="absolute animate-clockwise"
           src="/src/assets/Asset 1.png"
           alt=""
-          height="210"
-          width="210"
+          height="350"
+          width="350"
         />
         <img
           className="absolute animate-anticlockwise"
           src="/src/assets/Asset 2.png"
           alt=""
-          height="175"
-          width="175"
+          height="300"
+          width="300"
         />
       </div>
     </div>
