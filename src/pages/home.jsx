@@ -51,7 +51,7 @@ function Home() {
   return (
     <>
       <main className="container mx-auto">
-        <div className="flex justify-end space-x-1 py-2 my-3">
+        <div className="flex justify-end space-x-1 py-2">
           <button
             onClick={handleClick}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
