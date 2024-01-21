@@ -1,13 +1,18 @@
+import { SlNotebook } from "react-icons/sl";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Footer from "./components/footer";
 import About from "./pages/about";
 import Home from "./pages/home";
+
 export default function App() {
   return (
     <div>
       <BrowserRouter>
-        <div className="container flex justify-between items-center mx-auto">
-          <h1 className="font-bold text-3xl">LogView</h1>
+        <div className="container flex justify-between items-center mx-auto my-2">
+          <div className="flex font-bold text-3xl p-2">
+            <SlNotebook />
+            <h1>LogView</h1>
+          </div>
           <nav>
             <ul className="flex justify-between">
               <li className="px-2 mx-2">
