@@ -1,3 +1,5 @@
+import CircleAnimation from "../components/circleanimation";
+
 export default function About() {
   return (
     <div className="container mx-auto">
@@ -45,29 +47,8 @@ export default function About() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-center items-center w-full min-h-fit fixed top-[80%] left-[30%]">
-        <img
-          className="absolute animate-anticlockwise"
-          src="/src/assets/Asset 2.png"
-          alt=""
-          height="420"
-          width="420"
-        />
-        <img
-          className="absolute animate-clockwise"
-          src="/src/assets/Asset 1.png"
-          alt=""
-          height="350"
-          width="350"
-        />
-        <img
-          className="absolute animate-anticlockwise"
-          src="/src/assets/Asset 2.png"
-          alt=""
-          height="300"
-          width="300"
-        />
-      </div>
+      <CircleAnimation className="bottom-[5%] left-[50%]" />
+      <CircleAnimation className="top-[0%] right-[50%]" />
     </div>
   );
 }

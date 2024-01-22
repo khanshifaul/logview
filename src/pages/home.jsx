@@ -65,6 +65,7 @@ function Home() {
         </div>
 
         <div className="md:w-full overflow-x-visible">
+        <div className="scrollbar-hide overflow-x-scroll md:overflow-x-hidden">
           <table className="table-auto w-full text-center m-2">
             <thead className="bg-gray-200">
               <tr className="py-2">
@@ -94,6 +95,7 @@ function Home() {
                 ))}
             </tbody>
           </table>
+          </div>
           {loading && (
             <div className="flex justify-center">
               <div

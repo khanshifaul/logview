@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div>
       <BrowserRouter>
-        <div className="container sticky top-0 flex justify-between items-center mx-auto my-2 bg-white">
+        <div className="container sticky top-0 flex justify-between items-center mx-auto my-2">
           <a href="/">
             <Logo />
           </a>
