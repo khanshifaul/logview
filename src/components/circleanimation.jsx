@@ -39,6 +39,9 @@ export default function CircleAnimation(props) {
         height="200"
         width="200"
       />
+      <div className="w-[150px] h-[150px] rounded-full absolute animate-anticlockwise bg-red-600"></div>
+      <div className="w-[5px] h-[150px] absolute animate-anticlockwise bg-white"></div>
+      <div className="w-[150px] h-[5px] absolute animate-anticlockwise bg-white"></div>
     </div>
   );
 }
