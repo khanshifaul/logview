@@ -74,10 +74,10 @@ function Home() {
         </div>
 
         <div className="px-2 my-2 border-l-2">
-          <p className="font-semibold">Your file has to be like this:</p>
-          <p>
+          <p className="font-semibold py-2">Your file has to be like this:</p>
+          <p className="py-2">
             {
-              "Jan 16 00:00:04 Orbit-Grameen-INT-Chadpur prerouting: in:<pppoe-ZZ.MAMUN> out:(unknown 0), connection-state:established,snat proto TCP (ACK,FIN), 10.20.46.65:59786->184.51.195.217:443, NAT (10.20.46.65:59786->103.155.118.6:59786)->184.51.195.217:443, len 52"
+              "Jan 16 00:00:04 HOSTNAME prerouting: in:<pppoe-ZZ.USER> out:(unknown 0), connection-state:established,snat proto TCP (ACK,FIN), IP:PORT->IP:PORT, NAT (IP:PORT->IP:PORT)->IP:PORT, len 52"
             }
           </p>
         </div>
