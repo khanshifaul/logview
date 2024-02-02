@@ -50,12 +50,12 @@ function Dropzone() {
           </div>
         )}
         {!file && (
-          <div className="flex items-center h-full text-gray-600">
+          <div className="md:flex items-center h-full text-gray-600">
             <p className="font-medium">
               Drag and drop a .txt or .log file here, or
             </p>
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded ml-4"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded md:ml-4"
               onClick={() => handleFileChange()}
             >
               Select File
