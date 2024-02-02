@@ -3,7 +3,20 @@ import { useEffect, useState } from "react";
 function Dropzone() {
   const [file, setFile] = useState(null);
 
-  const handleFileChange = () => {
+  const handleDragOver = (event) => {
+    event.preventDefault(); // Allow dropping
+  };
+
+  const handleDrop = (event) => {
+    event.preventDefault();
+    const file = event.dataTransfer.files[0];
+    // Validate file type
+    if (file) {
+      setFile(file);
+    }
+  };
+
+  const handleFileChange = (event) => {
     const input = document.querySelector('input[type="file"]');
     input.click();
     setFile(event.target.files[0]);
@@ -21,7 +34,12 @@ function Dropzone() {
 
   return (
     <>
-      <div className="w-full">
+      <div
+        className="w-full"
+        onClick={handleFileChange}
+        onDragOver={handleDragOver}
+        onDrop={handleDrop}
+      >
         <input
           type="file"
           className="hidden"

@@ -52,6 +52,7 @@ function Home() {
         setData(parsedData);
       } catch (error) {
         alert("Something Went Wrong!!! Check your file & Try Again.");
+        setData([]);
       }
     }
   };
