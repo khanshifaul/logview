@@ -123,6 +123,7 @@ function Home() {
               ></div>
             </div>
           )}
+          {!loading && data.length === 0 && <div className="text-center my-12">🤓 No Data to Show 🤓</div>}
         </div>
       </main>
     </>
