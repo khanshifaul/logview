@@ -23,7 +23,7 @@ function Dropzone() {
   };
 
   useEffect(() => {
-    if (file && ["text/plain", "text/x-log"].includes(file.type)) {
+    if (file) {
       const reader = new FileReader();
       reader.onload = (event) => {
         localStorage.setItem("fileData", event.target.result);
@@ -34,12 +34,7 @@ function Dropzone() {
 
   return (
     <>
-      <div
-        className="w-full"
-        onClick={handleFileChange}
-        onDragOver={handleDragOver}
-        onDrop={handleDrop}
-      >
+      <div className={`w-full`} onDragOver={handleDragOver} onDrop={handleDrop}>
         <input
           type="file"
           className="hidden"
@@ -47,7 +42,10 @@ function Dropzone() {
           accept=".txt,.log"
         />
         {file && (
-          <div className="flex items-center bg-opacity-75 text-2xl font-bold w-full">
+          <div
+            onClick={handleFileChange}
+            className="flex items-center bg-opacity-75 text-2xl font-bold w-full"
+          >
             <h2>{file.name}</h2>
           </div>
         )}

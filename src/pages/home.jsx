@@ -11,7 +11,6 @@ function Home() {
   const handleClick = () => {
     setIsClicked(true);
     setLoading(true);
-
     handleShowData();
     setTimeout(() => {
       setLoading(false);
