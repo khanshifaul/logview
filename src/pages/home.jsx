@@ -28,7 +28,7 @@ function Home() {
 
     window.addEventListener("storage", handleStorageChange);
     return () => window.removeEventListener("storage", handleStorageChange);
-  }, []);
+  }, [setFileData]);
 
   const handleShowData = () => {
     const base64Data = localStorage.getItem("fileData");
