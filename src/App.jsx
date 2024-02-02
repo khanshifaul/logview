@@ -3,6 +3,7 @@ import Footer from "./components/footer";
 import Logo from "./components/logo";
 import About from "./pages/about";
 import Home from "./pages/home";
+import ToolPage from "./pages/tool";
 
 export default function App() {
   return (
@@ -26,6 +27,16 @@ export default function App() {
               </li>
               <li>
                 <NavLink
+                  to="/toolpage"
+                  className={({ isActive }) =>
+                    isActive ? "font-semibold" : ""
+                  }
+                >
+                  Tool
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/about"
                   className={({ isActive }) =>
                     isActive ? "font-semibold" : ""
@@ -40,6 +51,7 @@ export default function App() {
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/" element={<Home />} />
+          <Route path="/toolpage" element={<ToolPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />
