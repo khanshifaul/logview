@@ -1,6 +1,6 @@
 import CircleAnimation from "../components/circleanimation";
 
-export default function About() {
+function About() {
   return (
     <div className="container mx-auto">
       <div className="p-5">
@@ -52,3 +52,6 @@ export default function About() {
     </div>
   );
 }
+
+
+export default About;
