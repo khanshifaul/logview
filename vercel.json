@@ -3,6 +3,10 @@
     {
       "source": "/about",
       "destination": "/"
+    },
+    {
+      "source": "/*",
+      "destination": "/not-found"
     }
   ]
 }
