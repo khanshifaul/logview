@@ -1,9 +1,13 @@
 {
   "redirects": [
     {
-      "source": "/about",
+      "source": "/",
       "destination": "/"
     },
-    { "source": "/(*)", "destination": "/not-found" }
+    {
+      "source": "/about",
+      "destination": "/about"
+    },
+    { "source": "/.*", "destination": "/not-found" }
   ]
 }
