@@ -1,13 +1,9 @@
 {
   "redirects": [
     {
-      "source": "/home",
-      "destination": "/"
-    },
-    {
-      "source": "/about",
-      "destination": "/about"
-    },
-    { "source": "/.*", "destination": "/" }
+      "source": "/(*)",
+      "destination": "/",
+      "permanent": true
+    }
   ]
 }
