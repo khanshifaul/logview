@@ -4,6 +4,6 @@
       "source": "/about",
       "destination": "/"
     },
-    { "source": "/(.*)", "destination": "/not-found" }
+    { "source": "/(*)", "destination": "/not-found" }
   ]
 }
